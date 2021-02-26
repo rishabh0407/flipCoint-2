@@ -1,3 +1,11 @@
 #!/bin/bash -x
 
-echo "Welcome to the world of coin combination"
+toss=$(( RANDOM % 2 ));
+isHead=1;
+isTail=0;
+if(( $toss == $isHead ));
+then
+    echo "Head"
+else 
+    echo "Tails"
+fi
